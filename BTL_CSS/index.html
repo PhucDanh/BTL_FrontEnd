@@ -18,6 +18,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
             rel="stylesheet">
+
         <!-- font awesome -->
         <link
             rel="stylesheet"
@@ -27,12 +28,15 @@
         <!-- FONT DAIMLER-CAC -->
         <link href="//db.onlinewebfonts.com/c/0de280340df9c67a5d4e8fb82310b4ad?family=Daimler+CAC" rel="stylesheet" type="text/css"/> 
 
+        <!-- AOS-Animate on scroll -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- My css -->
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
         <header>
-            <div class="container-fluid">
+            <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
                 <nav class="navbar navbar-expand-lg">
                     <div class="image">
                         <a class="navbar-brand" href="#">
@@ -96,7 +100,7 @@
             </div>
         </header>
         <section class="carousel">
-            <div id="carouselExampleControls" class="carousel slide"
+            <div id="carouselExampleControls" data-aos="fade-up" data-aos-duration="1000" class="carousel slide"
                 data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -185,7 +189,7 @@
             </div>
         </section>
         <section class="search">
-            <div class="search__box">
+            <div class="search__box" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="input-group">
                         <input type="text" class="form-control"
@@ -202,8 +206,8 @@
                 </div>
             </div>
         </section>
-        <section class="info">
-            <div class="info__content">
+        <section class="info" data-aos="fade-up">
+            <div class="info__content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="info__text">
                         <h2>Welcome to the Mercedes-Benz international website.</h2>
@@ -235,7 +239,7 @@
             </div>
         </section>
         <section class="channel">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="row channel__content">
                     <div class="col-6 col-md-3">
                         <div class="channel__img">
@@ -273,7 +277,7 @@
             </div>
         </section>
         <section id="navTabs">
-            <div class="container-fluid">
+            <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true"><span><i class="fas fa-newspaper"></i>New</span></a>
@@ -1537,7 +1541,7 @@
             </div>
         </section>
         <section id="footnotes">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="head">
                     <p><i class="fas fa-gas-pump"></i> Kraftstoffverbrauch kombiniert</p>
                     <p><i class="fas fa-leaf"></i> CO₂-Emissionen kombiniert</p>
@@ -1576,7 +1580,7 @@
             </div>
         </section>
         <footer>
-            <div class="footer__menu">
+            <div class="footer__menu" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="footer__menu__content">
                         <div class="row">
@@ -1731,7 +1735,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__info">
+            <div class="footer__info" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="footer__info__content">
                         <div class="footer__info__heading">
@@ -1753,7 +1757,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__logo">
+            <div class="footer__logo" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <hr class="footer__hr">
                     <div class="footer__logo__content">
@@ -1903,5 +1907,12 @@
                 prevScrollpos = currentScrollPos;
             }
         </script>
+
+        <!-- AOS-Animate on scroll -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>      
+
     </body>
 </html>
