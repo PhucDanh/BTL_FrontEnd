@@ -77,6 +77,14 @@ header {
 @include responsive("extra-large"){
     .navbar-collapse  {
         .nav-item{
+            margin: auto 10px;
+        }
+    }
+}
+
+@include responsive("very-large"){
+    .navbar-collapse  {
+        .nav-item{
             display: none;
         }
     }

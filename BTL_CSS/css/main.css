@@ -114,6 +114,12 @@ header {
 
 @media screen and (max-width: 1400px) {
   .navbar-collapse .nav-item {
+    margin: auto 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .navbar-collapse .nav-item {
     display: none;
   }
 }
@@ -599,7 +605,12 @@ header {
   font-weight: 400;
 }
 
+#footnotes .container-fluid {
+  margin: auto 10px;
+}
+
 #footnotes .head {
+  margin: auto 40px auto 10px;
   display: flex;
   align-items: center;
   margin-bottom: 5px;
@@ -607,6 +618,15 @@ header {
 
 #footnotes .head p {
   margin-right: 30px;
+}
+
+#footnotes .content {
+  margin: auto 40px auto 10px;
+  word-wrap: normal;
+}
+
+footer {
+  margin-top: 50px;
 }
 
 .footer__menu .container {

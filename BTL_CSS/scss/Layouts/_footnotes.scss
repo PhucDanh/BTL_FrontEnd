@@ -1,13 +1,21 @@
 #footnotes {
+    .container-fluid {
+        margin: auto 10px;
+    }
     font-family: "Daimler CAC";
     margin-top: 80px;
     @include styleText($color-white-0, $fs-1, $fw_title_nav);
     .head {
+        margin: auto 40px auto 10px;
         display: flex;
         align-items: center;
         margin-bottom: 5px;
         p {
             margin-right: 30px;
         }
+    }
+    .content {
+        margin: auto 40px auto 10px;
+        word-wrap: normal;
     }
 }

@@ -1,10 +1,12 @@
+footer {
+    margin-top: 50px;
+}
+
 .footer__menu .container{
     padding: 30px;
 }
 
 .footer__menu__content {
-
-
     .footer__menu__item {
         padding: 0;
         h2 {
@@ -22,7 +24,6 @@
                 }
             }
         }
-        
     }
 }
 
@@ -31,8 +32,6 @@
             border: 0;
             height: 1px;
             margin: 30px -1px;
-           
-
 }
 
 
@@ -48,11 +47,9 @@
     ul {
         list-style: none;
         li {
-
             display: inline;
             margin: $mg-1 $mg-2;
             width: 45px;
-            
             i {
                 @include styleText($color-white-cream, $fs-3, $fw-normal); 
                 &:hover {
@@ -133,7 +130,6 @@
 }
 
 // backToTop
-
 .to__top a{
     text-decoration: none;
     @include styleText($color-white-cream, $fs-1, $fw-normal); 
@@ -151,7 +147,6 @@
   }
 
 //reponsive 
-
 @include responsive("large"){
     .footer {
         h2 {
