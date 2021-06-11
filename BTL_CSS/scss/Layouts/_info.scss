@@ -1,0 +1,49 @@
+.info__content {
+    padding: $pd-2 0;
+    .info__text {
+        text-align: left;
+        padding: $pd-2 *3 0;
+        max-width: 66.66%;
+        h2 {
+            @include styleText($color-white-0, $fs-4, $fw-normal);
+            margin-bottom: $mg-1;
+        }
+        p {
+            @include styleText($color-white-0, $fs-1, $fw-normal);
+            margin: $mg-1 0;
+            a {
+                color: $color-blue-2;
+                text-decoration: none;
+            }
+        }
+    }
+    .info__market { 
+        padding-top: $pd-2 ;
+        .info__market__button {
+            background-color: $color-blue-2;
+            border: 1px solid $color-blue-2;
+            border-radius: 1px;
+            &:hover {
+                background-color: $color-blue-1;
+                border-color: $color-blue-1;
+            }
+        }
+    }
+}
+@include responsive("extra-large"){
+    .info__content {
+        .info__text {
+            max-width: 50%;
+        }
+    }
+}
+@include responsive("large"){
+    .info__content {
+        .info__text {
+            max-width: 100%;
+            h2 {
+                @include styleText($color-white-0, $fs-3, $fw-normal);  
+            }
+        }
+    }
+}

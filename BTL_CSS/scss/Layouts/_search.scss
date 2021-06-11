@@ -1,0 +1,23 @@
+.search__box {
+  background-color: $color-black-1;
+  padding: $pd-2;
+}
+
+.input-group {
+  .form-control {
+    border: none;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .input-group-prepend {
+    .input-group-text {
+      background-color: $color-white-0;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

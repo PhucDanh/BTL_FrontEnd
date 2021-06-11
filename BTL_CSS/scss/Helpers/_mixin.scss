@@ -1,0 +1,22 @@
+// them style cho cac thanh phan text button hien thi tren trang web
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// responsive
+// screen : chua ten man hinh
+@mixin responsive($screen) {
+    // lay gia tri dua theo kich thuoc man hinh
+    // kiem tra gia tri ten man hinh co ton tai hay khong va co ton tai o bien $breakpoints
+    @if(map-has-key($map: $breakpoints, $key: $screen)) {
+        // xet tinh hop le
+        $value: map-get($map: $breakpoints , $key: $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }@else{
+        @warn "Man hinh khong hop le";
+    }
+}

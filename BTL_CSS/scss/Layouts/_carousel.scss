@@ -1,0 +1,55 @@
+.carousel {
+    margin-top: 120px;
+}
+
+.carousel-item img {
+    position: relative;
+}
+.carousel__heading {
+    position: absolute;
+    top: 10%;
+}
+
+.carousel__heading h1 {
+    opacity: 0;
+    @include styleText($color-white-0, $fs-5, $fw-normal);
+    display: block;
+    animation: arrowDown 1.5s linear .5s infinite; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-bottom: $mg-2;
+}
+.carousel__heading button {
+    opacity: 0;
+    padding: $pd-0 $pd-2;
+    background-color: $color-black-light;
+    color: $color-white-0;
+    border: 1px solid $color-black-0;
+    animation: arrowDown 1.5s linear .6s infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrowDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@include responsive("large"){
+    .carousel__heading h1 {
+        @include styleText($color-white-0, $fs-4, $fw-normal);
+    }
+}
+@include responsive("medium"){
+    
+}

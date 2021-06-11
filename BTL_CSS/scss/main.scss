@@ -1,0 +1,20 @@
+@import 'Base/customize';
+@import 'Base/reset';
+
+@import 'Compoments/button';
+
+@import 'Helpers/mixin';
+@import 'Helpers/variables';
+
+@import 'Layouts/header';
+@import 'Layouts/carousel';
+@import 'Layouts/search';
+@import 'Layouts/info';
+@import 'Layouts/channel';
+@import 'Layouts/navTabs';
+@import 'Layouts/footnotes';
+@import 'Layouts/footer';
+
+@import 'Pages/contact';
+@import 'Pages/home';
+
