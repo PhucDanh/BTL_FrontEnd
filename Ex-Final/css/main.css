@@ -1,0 +1,324 @@
+@import url(//db.onlinewebfonts.com/c/0de280340df9c67a5d4e8fb82310b4ad?family=Daimler+CAC);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Daimler CAC";
+}
+
+@font-face {
+  html, body {
+    font-family: "Daimler CAC";
+    src: url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.eot");
+    src: url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.woff") format("woff"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.svg#Daimler CAC") format("svg");
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body, html {
+  background-color: black;
+}
+
+@media screen and (max-width: 2000px) {
+  #navTabs {
+    margin: auto 100px;
+  }
+  #navTabs p {
+    margin: 0px;
+  }
+  #navTabs #myTab {
+    justify-content: center;
+    border-bottom: none;
+  }
+  #navTabs #myTab .nav-item {
+    background-color: #000;
+  }
+  #navTabs #myTab .nav-item .nav-link {
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline;
+    transition: all .5s ease-out;
+  }
+  #navTabs #myTab .nav-item .nav-link i {
+    margin-right: 15px;
+  }
+  #navTabs #myTab .nav-item .nav-link:hover {
+    color: #00adef;
+  }
+  #navTabs #myTab .nav-item .active {
+    background-color: #000;
+    color: #00adef;
+  }
+  #navTabs #myTab .nav-item .active span {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #00adef;
+  }
+  #navTabs #myTabContent {
+    margin-top: 30px;
+  }
+  #navTabs #myTabContent #news .newsContent, #navTabs #myTabContent #news .popularContent, #navTabs #myTabContent #news .videosContent, #navTabs #myTabContent #popular .newsContent, #navTabs #myTabContent #popular .popularContent, #navTabs #myTabContent #popular .videosContent, #navTabs #myTabContent #videos .newsContent, #navTabs #myTabContent #videos .popularContent, #navTabs #myTabContent #videos .videosContent {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(1), #navTabs #myTabContent #news .popularContent .item:nth-child(1), #navTabs #myTabContent #news .videosContent .item:nth-child(1), #navTabs #myTabContent #popular .newsContent .item:nth-child(1), #navTabs #myTabContent #popular .popularContent .item:nth-child(1), #navTabs #myTabContent #popular .videosContent .item:nth-child(1), #navTabs #myTabContent #videos .newsContent .item:nth-child(1), #navTabs #myTabContent #videos .popularContent .item:nth-child(1), #navTabs #myTabContent #videos .videosContent .item:nth-child(1) {
+    grid-area: 1 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(10), #navTabs #myTabContent #news .popularContent .item:nth-child(10), #navTabs #myTabContent #news .videosContent .item:nth-child(10), #navTabs #myTabContent #popular .newsContent .item:nth-child(10), #navTabs #myTabContent #popular .popularContent .item:nth-child(10), #navTabs #myTabContent #popular .videosContent .item:nth-child(10), #navTabs #myTabContent #videos .newsContent .item:nth-child(10), #navTabs #myTabContent #videos .popularContent .item:nth-child(10), #navTabs #myTabContent #videos .videosContent .item:nth-child(10) {
+    grid-area: 4 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_5, #navTabs #myTabContent #news .popularContent .showItem_5, #navTabs #myTabContent #news .videosContent .showItem_5, #navTabs #myTabContent #popular .newsContent .showItem_5, #navTabs #myTabContent #popular .popularContent .showItem_5, #navTabs #myTabContent #popular .videosContent .showItem_5, #navTabs #myTabContent #videos .newsContent .showItem_5, #navTabs #myTabContent #videos .popularContent .showItem_5, #navTabs #myTabContent #videos .videosContent .showItem_5 {
+    grid-area: 7 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_14, #navTabs #myTabContent #news .popularContent .showItem_14, #navTabs #myTabContent #news .videosContent .showItem_14, #navTabs #myTabContent #popular .newsContent .showItem_14, #navTabs #myTabContent #popular .popularContent .showItem_14, #navTabs #myTabContent #popular .videosContent .showItem_14, #navTabs #myTabContent #videos .newsContent .showItem_14, #navTabs #myTabContent #videos .popularContent .showItem_14, #navTabs #myTabContent #videos .videosContent .showItem_14 {
+    grid-area: 10 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news #showmore-new, #navTabs #myTabContent #news #showmore-popular, #navTabs #myTabContent #news #showmore-videos, #navTabs #myTabContent #popular #showmore-new, #navTabs #myTabContent #popular #showmore-popular, #navTabs #myTabContent #popular #showmore-videos, #navTabs #myTabContent #videos #showmore-new, #navTabs #myTabContent #videos #showmore-popular, #navTabs #myTabContent #videos #showmore-videos {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  #navTabs #myTabContent #news #showmore-new .btn_show, #navTabs #myTabContent #news #showmore-popular .btn_show, #navTabs #myTabContent #news #showmore-videos .btn_show, #navTabs #myTabContent #popular #showmore-new .btn_show, #navTabs #myTabContent #popular #showmore-popular .btn_show, #navTabs #myTabContent #popular #showmore-videos .btn_show, #navTabs #myTabContent #videos #showmore-new .btn_show, #navTabs #myTabContent #videos #showmore-popular .btn_show, #navTabs #myTabContent #videos #showmore-videos .btn_show {
+    transition: color .5s ease-out;
+    background: linear-gradient(#303030, #202020);
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 6px 20px;
+    border: 1px solid #202020;
+  }
+  #navTabs #myTabContent #news #showmore-new .btn_show:hover, #navTabs #myTabContent #news #showmore-popular .btn_show:hover, #navTabs #myTabContent #news #showmore-videos .btn_show:hover, #navTabs #myTabContent #popular #showmore-new .btn_show:hover, #navTabs #myTabContent #popular #showmore-popular .btn_show:hover, #navTabs #myTabContent #popular #showmore-videos .btn_show:hover, #navTabs #myTabContent #videos #showmore-new .btn_show:hover, #navTabs #myTabContent #videos #showmore-popular .btn_show:hover, #navTabs #myTabContent #videos #showmore-videos .btn_show:hover {
+    color: #f0f0f0;
+  }
+  #navTabs #myTabContent #news #showmore-new .btn_show:active, #navTabs #myTabContent #news #showmore-popular .btn_show:active, #navTabs #myTabContent #news #showmore-videos .btn_show:active, #navTabs #myTabContent #popular #showmore-new .btn_show:active, #navTabs #myTabContent #popular #showmore-popular .btn_show:active, #navTabs #myTabContent #popular #showmore-videos .btn_show:active, #navTabs #myTabContent #videos #showmore-new .btn_show:active, #navTabs #myTabContent #videos #showmore-popular .btn_show:active, #navTabs #myTabContent #videos #showmore-videos .btn_show:active {
+    color: #00adef;
+  }
+  #navTabs #myTabContent #news .itemShow, #navTabs #myTabContent #popular .itemShow, #navTabs #myTabContent #videos .itemShow {
+    display: none;
+  }
+  #navTabs #myTabContent #news .item, #navTabs #myTabContent #news .itemShow, #navTabs #myTabContent #popular .item, #navTabs #myTabContent #popular .itemShow, #navTabs #myTabContent #videos .item, #navTabs #myTabContent #videos .itemShow {
+    position: relative;
+  }
+  #navTabs #myTabContent #news .item .icon_play, #navTabs #myTabContent #news .itemShow .icon_play, #navTabs #myTabContent #popular .item .icon_play, #navTabs #myTabContent #popular .itemShow .icon_play, #navTabs #myTabContent #videos .item .icon_play, #navTabs #myTabContent #videos .itemShow .icon_play {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    transition: all .5s;
+    opacity: 1;
+  }
+  #navTabs #myTabContent #news .item .icon_play .icon, #navTabs #myTabContent #news .itemShow .icon_play .icon, #navTabs #myTabContent #popular .item .icon_play .icon, #navTabs #myTabContent #popular .itemShow .icon_play .icon, #navTabs #myTabContent #videos .item .icon_play .icon, #navTabs #myTabContent #videos .itemShow .icon_play .icon {
+    background-color: #efefef;
+    color: #333;
+    font-size: 9px;
+    height: 25px;
+    padding: 7px 12px;
+    width: 30px;
+    border: 0;
+  }
+  #navTabs #myTabContent #news .item .icon_play .time, #navTabs #myTabContent #news .itemShow .icon_play .time, #navTabs #myTabContent #popular .item .icon_play .time, #navTabs #myTabContent #popular .itemShow .icon_play .time, #navTabs #myTabContent #videos .item .icon_play .time, #navTabs #myTabContent #videos .itemShow .icon_play .time {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    height: 25px;
+    padding: 4px 8px;
+  }
+  #navTabs #myTabContent #news .item .description, #navTabs #myTabContent #news .itemShow .description, #navTabs #myTabContent #popular .item .description, #navTabs #myTabContent #popular .itemShow .description, #navTabs #myTabContent #videos .item .description, #navTabs #myTabContent #videos .itemShow .description {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    padding: 13px 31px 13px 31px;
+    z-index: 1;
+    transition: height .5s, background 1.5s;
+  }
+  #navTabs #myTabContent #news .item .description_title p, #navTabs #myTabContent #news .itemShow .description_title p, #navTabs #myTabContent #popular .item .description_title p, #navTabs #myTabContent #popular .itemShow .description_title p, #navTabs #myTabContent #videos .item .description_title p, #navTabs #myTabContent #videos .itemShow .description_title p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24px;
+  }
+  #navTabs #myTabContent #news .item .description_detail, #navTabs #myTabContent #news .itemShow .description_detail, #navTabs #myTabContent #popular .item .description_detail, #navTabs #myTabContent #popular .itemShow .description_detail, #navTabs #myTabContent #videos .item .description_detail, #navTabs #myTabContent #videos .itemShow .description_detail {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 2px;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+  }
+  #navTabs #myTabContent #news .item:hover .description, #navTabs #myTabContent #news .itemShow:hover .description, #navTabs #myTabContent #popular .item:hover .description, #navTabs #myTabContent #popular .itemShow:hover .description, #navTabs #myTabContent #videos .item:hover .description, #navTabs #myTabContent #videos .itemShow:hover .description {
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #navTabs #myTabContent #news .item:hover .description .description_detail, #navTabs #myTabContent #news .itemShow:hover .description .description_detail, #navTabs #myTabContent #popular .item:hover .description .description_detail, #navTabs #myTabContent #popular .itemShow:hover .description .description_detail, #navTabs #myTabContent #videos .item:hover .description .description_detail, #navTabs #myTabContent #videos .itemShow:hover .description .description_detail {
+    opacity: 1;
+  }
+  #navTabs #myTabContent #news .item:hover .description_title p, #navTabs #myTabContent #news .itemShow:hover .description_title p, #navTabs #myTabContent #popular .item:hover .description_title p, #navTabs #myTabContent #popular .itemShow:hover .description_title p, #navTabs #myTabContent #videos .item:hover .description_title p, #navTabs #myTabContent #videos .itemShow:hover .description_title p {
+    white-space: normal;
+  }
+  #navTabs #myTabContent #news .item:hover .icon_play, #navTabs #myTabContent #news .itemShow:hover .icon_play, #navTabs #myTabContent #popular .item:hover .icon_play, #navTabs #myTabContent #popular .itemShow:hover .icon_play, #navTabs #myTabContent #videos .item:hover .icon_play, #navTabs #myTabContent #videos .itemShow:hover .icon_play {
+    opacity: 0;
+  }
+  #navTabs #myTabContent #news .item:nth-child(1):hover .description, #navTabs #myTabContent #popular .item:nth-child(1):hover .description, #navTabs #myTabContent #videos .item:nth-child(1):hover .description {
+    height: 25%;
+  }
+  #navTabs #myTabContent #news .item:nth-child(10):hover .description, #navTabs #myTabContent #popular .item:nth-child(10):hover .description, #navTabs #myTabContent #videos .item:nth-child(10):hover .description {
+    height: 25%;
+  }
+  #navTabs #myTabContent #news .showItem_5:hover .description, #navTabs #myTabContent #popular .showItem_5:hover .description, #navTabs #myTabContent #videos .showItem_5:hover .description {
+    height: 25%;
+  }
+  #navTabs #myTabContent #news .showItem_14:hover .description, #navTabs #myTabContent #popular .showItem_14:hover .description, #navTabs #myTabContent #videos .showItem_14:hover .description {
+    height: 25%;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  #navTabs {
+    margin: auto;
+  }
+  #navTabs #myTabContent #news .newsContent, #navTabs #myTabContent #news .popularContent, #navTabs #myTabContent #news .videosContent, #navTabs #myTabContent #popular .newsContent, #navTabs #myTabContent #popular .popularContent, #navTabs #myTabContent #popular .videosContent, #navTabs #myTabContent #videos .newsContent, #navTabs #myTabContent #videos .popularContent, #navTabs #myTabContent #videos .videosContent {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(1), #navTabs #myTabContent #news .popularContent .item:nth-child(1), #navTabs #myTabContent #news .videosContent .item:nth-child(1), #navTabs #myTabContent #popular .newsContent .item:nth-child(1), #navTabs #myTabContent #popular .popularContent .item:nth-child(1), #navTabs #myTabContent #popular .videosContent .item:nth-child(1), #navTabs #myTabContent #videos .newsContent .item:nth-child(1), #navTabs #myTabContent #videos .popularContent .item:nth-child(1), #navTabs #myTabContent #videos .videosContent .item:nth-child(1) {
+    grid-area: 1 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(10), #navTabs #myTabContent #news .popularContent .item:nth-child(10), #navTabs #myTabContent #news .videosContent .item:nth-child(10), #navTabs #myTabContent #popular .newsContent .item:nth-child(10), #navTabs #myTabContent #popular .popularContent .item:nth-child(10), #navTabs #myTabContent #popular .videosContent .item:nth-child(10), #navTabs #myTabContent #videos .newsContent .item:nth-child(10), #navTabs #myTabContent #videos .popularContent .item:nth-child(10), #navTabs #myTabContent #videos .videosContent .item:nth-child(10) {
+    grid-area: 5 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_5, #navTabs #myTabContent #news .popularContent .showItem_5, #navTabs #myTabContent #news .videosContent .showItem_5, #navTabs #myTabContent #popular .newsContent .showItem_5, #navTabs #myTabContent #popular .popularContent .showItem_5, #navTabs #myTabContent #popular .videosContent .showItem_5, #navTabs #myTabContent #videos .newsContent .showItem_5, #navTabs #myTabContent #videos .popularContent .showItem_5, #navTabs #myTabContent #videos .videosContent .showItem_5 {
+    grid-area: 9 / 1 / span 2 / span 2;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_14, #navTabs #myTabContent #news .popularContent .showItem_14, #navTabs #myTabContent #news .videosContent .showItem_14, #navTabs #myTabContent #popular .newsContent .showItem_14, #navTabs #myTabContent #popular .popularContent .showItem_14, #navTabs #myTabContent #popular .videosContent .showItem_14, #navTabs #myTabContent #videos .newsContent .showItem_14, #navTabs #myTabContent #videos .popularContent .showItem_14, #navTabs #myTabContent #videos .videosContent .showItem_14 {
+    grid-area: 13 / 1 / span 2 / span 2;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #navTabs {
+    margin: auto;
+  }
+  #navTabs #myTabContent #news .newsContent, #navTabs #myTabContent #news .popularContent, #navTabs #myTabContent #news .videosContent, #navTabs #myTabContent #popular .newsContent, #navTabs #myTabContent #popular .popularContent, #navTabs #myTabContent #popular .videosContent, #navTabs #myTabContent #videos .newsContent, #navTabs #myTabContent #videos .popularContent, #navTabs #myTabContent #videos .videosContent {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(1), #navTabs #myTabContent #news .popularContent .item:nth-child(1), #navTabs #myTabContent #news .videosContent .item:nth-child(1), #navTabs #myTabContent #popular .newsContent .item:nth-child(1), #navTabs #myTabContent #popular .popularContent .item:nth-child(1), #navTabs #myTabContent #popular .videosContent .item:nth-child(1), #navTabs #myTabContent #videos .newsContent .item:nth-child(1), #navTabs #myTabContent #videos .popularContent .item:nth-child(1), #navTabs #myTabContent #videos .videosContent .item:nth-child(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(10), #navTabs #myTabContent #news .popularContent .item:nth-child(10), #navTabs #myTabContent #news .videosContent .item:nth-child(10), #navTabs #myTabContent #popular .newsContent .item:nth-child(10), #navTabs #myTabContent #popular .popularContent .item:nth-child(10), #navTabs #myTabContent #popular .videosContent .item:nth-child(10), #navTabs #myTabContent #videos .newsContent .item:nth-child(10), #navTabs #myTabContent #videos .popularContent .item:nth-child(10), #navTabs #myTabContent #videos .videosContent .item:nth-child(10) {
+    grid-area: 5 / 2 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_5, #navTabs #myTabContent #news .popularContent .showItem_5, #navTabs #myTabContent #news .videosContent .showItem_5, #navTabs #myTabContent #popular .newsContent .showItem_5, #navTabs #myTabContent #popular .popularContent .showItem_5, #navTabs #myTabContent #popular .videosContent .showItem_5, #navTabs #myTabContent #videos .newsContent .showItem_5, #navTabs #myTabContent #videos .popularContent .showItem_5, #navTabs #myTabContent #videos .videosContent .showItem_5 {
+    grid-area: 10 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_14, #navTabs #myTabContent #news .popularContent .showItem_14, #navTabs #myTabContent #news .videosContent .showItem_14, #navTabs #myTabContent #popular .newsContent .showItem_14, #navTabs #myTabContent #popular .popularContent .showItem_14, #navTabs #myTabContent #popular .videosContent .showItem_14, #navTabs #myTabContent #videos .newsContent .showItem_14, #navTabs #myTabContent #videos .popularContent .showItem_14, #navTabs #myTabContent #videos .videosContent .showItem_14 {
+    grid-area: 14 / 2 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .item:nth-child(1):hover .description, #navTabs #myTabContent #popular .item:nth-child(1):hover .description, #navTabs #myTabContent #videos .item:nth-child(1):hover .description {
+    height: 50%;
+  }
+  #navTabs #myTabContent #news .item:nth-child(10):hover .description, #navTabs #myTabContent #popular .item:nth-child(10):hover .description, #navTabs #myTabContent #videos .item:nth-child(10):hover .description {
+    height: 50%;
+  }
+  #navTabs #myTabContent #news .showItem_5:hover .description, #navTabs #myTabContent #popular .showItem_5:hover .description, #navTabs #myTabContent #videos .showItem_5:hover .description {
+    height: 50%;
+  }
+  #navTabs #myTabContent #news .showItem_14:hover .description, #navTabs #myTabContent #popular .showItem_14:hover .description, #navTabs #myTabContent #videos .showItem_14:hover .description {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navTabs {
+    margin: auto;
+  }
+  #navTabs #myTabContent #news .item:hover .description, #navTabs #myTabContent #news .itemShow:hover .description, #navTabs #myTabContent #popular .item:hover .description, #navTabs #myTabContent #popular .itemShow:hover .description, #navTabs #myTabContent #videos .item:hover .description, #navTabs #myTabContent #videos .itemShow:hover .description {
+    height: 66.66%;
+  }
+  #navTabs #myTabContent #news .item:nth-child(1):hover .description, #navTabs #myTabContent #popular .item:nth-child(1):hover .description, #navTabs #myTabContent #videos .item:nth-child(1):hover .description {
+    height: 66.66%;
+  }
+  #navTabs #myTabContent #news .item:nth-child(10):hover .description, #navTabs #myTabContent #popular .item:nth-child(10):hover .description, #navTabs #myTabContent #videos .item:nth-child(10):hover .description {
+    height: 66.66%;
+  }
+  #navTabs #myTabContent #news .showItem_5:hover .description, #navTabs #myTabContent #popular .showItem_5:hover .description, #navTabs #myTabContent #videos .showItem_5:hover .description {
+    height: 66.66%;
+  }
+  #navTabs #myTabContent #news .showItem_14:hover .description, #navTabs #myTabContent #popular .showItem_14:hover .description, #navTabs #myTabContent #videos .showItem_14:hover .description {
+    height: 66.66%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navTabs {
+    margin: auto;
+  }
+  #navTabs #myTabContent #news .newsContent, #navTabs #myTabContent #news .popularContent, #navTabs #myTabContent #news .videosContent, #navTabs #myTabContent #popular .newsContent, #navTabs #myTabContent #popular .popularContent, #navTabs #myTabContent #popular .videosContent, #navTabs #myTabContent #videos .newsContent, #navTabs #myTabContent #videos .popularContent, #navTabs #myTabContent #videos .videosContent {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(1), #navTabs #myTabContent #news .popularContent .item:nth-child(1), #navTabs #myTabContent #news .videosContent .item:nth-child(1), #navTabs #myTabContent #popular .newsContent .item:nth-child(1), #navTabs #myTabContent #popular .popularContent .item:nth-child(1), #navTabs #myTabContent #popular .videosContent .item:nth-child(1), #navTabs #myTabContent #videos .newsContent .item:nth-child(1), #navTabs #myTabContent #videos .popularContent .item:nth-child(1), #navTabs #myTabContent #videos .videosContent .item:nth-child(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .item:nth-child(10), #navTabs #myTabContent #news .popularContent .item:nth-child(10), #navTabs #myTabContent #news .videosContent .item:nth-child(10), #navTabs #myTabContent #popular .newsContent .item:nth-child(10), #navTabs #myTabContent #popular .popularContent .item:nth-child(10), #navTabs #myTabContent #popular .videosContent .item:nth-child(10), #navTabs #myTabContent #videos .newsContent .item:nth-child(10), #navTabs #myTabContent #videos .popularContent .item:nth-child(10), #navTabs #myTabContent #videos .videosContent .item:nth-child(10) {
+    grid-area: 10 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_5, #navTabs #myTabContent #news .popularContent .showItem_5, #navTabs #myTabContent #news .videosContent .showItem_5, #navTabs #myTabContent #popular .newsContent .showItem_5, #navTabs #myTabContent #popular .popularContent .showItem_5, #navTabs #myTabContent #popular .videosContent .showItem_5, #navTabs #myTabContent #videos .newsContent .showItem_5, #navTabs #myTabContent #videos .popularContent .showItem_5, #navTabs #myTabContent #videos .videosContent .showItem_5 {
+    grid-area: 19 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .newsContent .showItem_14, #navTabs #myTabContent #news .popularContent .showItem_14, #navTabs #myTabContent #news .videosContent .showItem_14, #navTabs #myTabContent #popular .newsContent .showItem_14, #navTabs #myTabContent #popular .popularContent .showItem_14, #navTabs #myTabContent #popular .videosContent .showItem_14, #navTabs #myTabContent #videos .newsContent .showItem_14, #navTabs #myTabContent #videos .popularContent .showItem_14, #navTabs #myTabContent #videos .videosContent .showItem_14 {
+    grid-area: 28 / 1 / span 1 / span 1;
+  }
+  #navTabs #myTabContent #news .item:hover .description, #navTabs #myTabContent #news .itemShow:hover .description, #navTabs #myTabContent #popular .item:hover .description, #navTabs #myTabContent #popular .itemShow:hover .description, #navTabs #myTabContent #videos .item:hover .description, #navTabs #myTabContent #videos .itemShow:hover .description {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  #navTabs #myTabContent #news .item:hover .description .description_detail, #navTabs #myTabContent #news .itemShow:hover .description .description_detail, #navTabs #myTabContent #popular .item:hover .description .description_detail, #navTabs #myTabContent #popular .itemShow:hover .description .description_detail, #navTabs #myTabContent #videos .item:hover .description .description_detail, #navTabs #myTabContent #videos .itemShow:hover .description .description_detail {
+    opacity: 0;
+  }
+  #navTabs #myTabContent #news .item:hover .description_title p, #navTabs #myTabContent #news .itemShow:hover .description_title p, #navTabs #myTabContent #popular .item:hover .description_title p, #navTabs #myTabContent #popular .itemShow:hover .description_title p, #navTabs #myTabContent #videos .item:hover .description_title p, #navTabs #myTabContent #videos .itemShow:hover .description_title p {
+    white-space: normal;
+  }
+  #navTabs #myTabContent #news .item:hover .icon_play, #navTabs #myTabContent #news .itemShow:hover .icon_play, #navTabs #myTabContent #popular .item:hover .icon_play, #navTabs #myTabContent #popular .itemShow:hover .icon_play, #navTabs #myTabContent #videos .item:hover .icon_play, #navTabs #myTabContent #videos .itemShow:hover .icon_play {
+    opacity: 1;
+  }
+  #navTabs #myTabContent #news .item:nth-child(1):hover .description, #navTabs #myTabContent #popular .item:nth-child(1):hover .description, #navTabs #myTabContent #videos .item:nth-child(1):hover .description {
+    height: 50px;
+  }
+  #navTabs #myTabContent #news .item:nth-child(10):hover .description, #navTabs #myTabContent #popular .item:nth-child(10):hover .description, #navTabs #myTabContent #videos .item:nth-child(10):hover .description {
+    height: 50px;
+  }
+  #navTabs #myTabContent #news .showItem_5:hover .description, #navTabs #myTabContent #popular .showItem_5:hover .description, #navTabs #myTabContent #videos .showItem_5:hover .description {
+    height: 50px;
+  }
+  #navTabs #myTabContent #news .showItem_14:hover .description, #navTabs #myTabContent #popular .showItem_14:hover .description, #navTabs #myTabContent #videos .showItem_14:hover .description {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

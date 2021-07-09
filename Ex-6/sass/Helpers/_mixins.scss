@@ -1,0 +1,20 @@
+@mixin textStyle($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// reponsive
+@mixin responsive($screen) {
+    // lay gia tri dua theo kich thuoc man hinh
+    // kiem tra gia tri ten man hinh co ton tai hay khong, va co ton tai o bien @breakpoint 
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        // validation value
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }@else {
+        @warn "Man hinh khong hop le";
+    }
+}

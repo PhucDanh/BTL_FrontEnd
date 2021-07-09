@@ -1,0 +1,27 @@
+// variables color
+$color-white-0: #fff; //default
+$color-pink-0: #ff4f81;
+$color-green-0: #00a98f;
+$color-black-0: #333;
+$color-black-1: #282828;
+
+
+// variables font-size
+$fs-0: 16px;
+$fs-1: 36px;
+$fs-2: 42px;
+
+// variables font-weight
+$fw-0:200;
+$fw-1:600;
+$fw-2:300;
+$fw-normal: normal;
+$fw-bold: bold;
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

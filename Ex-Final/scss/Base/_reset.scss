@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    // font-family: Arial, Helvetica, sans-serif;
+    // @include text($fs-0, $fw-normal, $color-black-0, $color-white-0, $line-height-0);
+    @import url(//db.onlinewebfonts.com/c/0de280340df9c67a5d4e8fb82310b4ad?family=Daimler+CAC);
+    @font-face {font-family: "Daimler CAC"; src: url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.eot"); src: url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.woff") format("woff"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0de280340df9c67a5d4e8fb82310b4ad.svg#Daimler CAC") format("svg"); } 
+    font-family: "Daimler CAC";
+}

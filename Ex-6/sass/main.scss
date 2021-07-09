@@ -1,0 +1,31 @@
+// Chi chua duong dan den cac file trong thu muc
+// khong chua code style css
+
+// Helper
+@import './Helpers/variables';
+@import './Helpers/mixins';
+
+// Vendor
+
+// Base
+@import './Bases/customize';
+@import './Bases/reset';
+
+// Components
+// @import './Components/button';
+
+// Layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/count';
+@import './Layouts/courses';
+@import './Layouts/reviews';
+@import './Layouts/newsEvent';
+@import './Layouts/footer';
+
+// Page
+
+// Theme
+
+

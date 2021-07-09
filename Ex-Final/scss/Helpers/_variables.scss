@@ -1,0 +1,29 @@
+// variables color
+$color_white_base: #fff;
+$color_black_base: #000;
+$color_icon_play: #333;
+$color_blue_nav: #00adef;
+$color_btn_border: #202020;
+$color_btn_bg: #303030;
+$color_btn: #999;
+$color_btn_hover: #f0f0f0;
+$bg_color_icon_play: #efefef;
+
+
+// variables font-size
+$fs_title: 22px;
+$fs_detail: 16px;
+$fs_icon_play: 9px;
+$fs_time_play: 14px;
+
+// variables font-weight
+$fw_title: 400;
+
+//break points
+$breakpoints:(
+    'extra-large': 2000px,
+    'large' : 1580px,
+    'medium' : 1280px,
+    'quite-small':1024px,
+    'small' : 768px,
+)

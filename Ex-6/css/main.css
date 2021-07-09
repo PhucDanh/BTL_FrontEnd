@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.header1 {
+  padding: 8px 16px;
+  background-color: #ff4f81;
+}
+
+.header1 .header1_left {
+  text-align: left;
+  padding: 4px 0px;
+}
+
+.header1 .header1_left ul {
+  margin: 0px;
+  list-style-type: none;
+}
+
+.header1 .header1_left ul li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  display: inline;
+  margin-right: 28px;
+}
+
+.header1 .header1_left ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.header1 .header1_left ul li a:hover {
+  color: #00a98f;
+}
+
+.header1 .header1_right {
+  text-align: right;
+}
+
+.header1 .header1_right .icons .fab {
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  transition: all .5s;
+}
+
+.header1 .header1_right .icons .fab:hover {
+  background-color: #ff4f81;
+  border-color: #fff;
+}
+
+.header2 {
+  padding: 16px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.header2 .header2_left .navbar {
+  padding: 0px 16px;
+}
+
+.header2 .header2_left .header_logo .navbar-brand {
+  margin: auto;
+}
+
+.header2 .header2_left .header_logo .navbar-brand h1 {
+  color: #282828;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.header2 .header2_left .header_logo .navbar-brand h1 i {
+  transform: skewX(-15deg);
+}
+
+.header2 .header2_left .header_logo .navbar-brand label {
+  display: block;
+  color: #ff4f81;
+  font-size: 10.8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+.header2 .header2_right .header_list {
+  padding: 0px;
+  justify-content: center;
+}
+
+.header2 .header2_right .header_list .nav-item {
+  position: relative;
+  overflow: hidden;
+  margin: auto 15px;
+}
+
+.header2 .header2_right .header_list .nav-item .nav-link {
+  padding: 14px 8px;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header2 .header2_right .header_list .nav-item .nav-link::before {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  left: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4f81;
+  content: "";
+  transition: all .5s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.header2 .header2_right .header_list .nav-item .nav-link:hover {
+  color: #ff4f81;
+}
+
+.header2 .header2_right .header_list .nav-item:hover .nav-link::before {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.header2 .header2_right .header_list .nav-item .home.nav-link {
+  color: #ff4f81;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header2 .header2_right .header_list .nav-item .home.nav-link::before {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header1_left {
+    white-space: nowrap;
+  }
+}
+
+.owl-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.owl-item .content {
+  position: relative;
+  top: 160px;
+}
+
+.owl-item .content h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.owl-item .content h3 span {
+  font-weight: 600;
+}
+
+.owl-item .content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 16px auto 32px;
+}
+
+.owl-item .content .btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  background: none;
+  padding: 11px 20px;
+  border-radius: 0%;
+  border-color: #fff;
+  transition: all .5s;
+}
+
+.owl-item .content .btn .fas {
+  font-size: 10px;
+}
+
+.owl-item .content .btn:hover {
+  background-color: #ff4f81;
+  border-color: #ff4f81;
+}
+
+.item1 {
+  background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 5vw;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: white;
+  width: 12px;
+  height: 12px;
+  margin: 5px 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: black;
+}
+/*# sourceMappingURL=main.css.map */
