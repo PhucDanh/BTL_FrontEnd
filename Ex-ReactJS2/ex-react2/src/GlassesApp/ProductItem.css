@@ -1,0 +1,8 @@
+img {
+    display: block;
+    width: 100px;
+    height: 55px;
+    border: 1px solid darkgrey;
+    margin: auto;
+    padding: 8px;
+}
